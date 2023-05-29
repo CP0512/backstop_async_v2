@@ -1,0 +1,14 @@
+{
+  "name": "backstop",
+  "version": "1.0.0",
+  "description": "POC Setup",
+  "main": "index.js",
+  "scripts": {
+    "my-script": ""
+  },
+  "author": "chinmay",
+  "license": "ISC",
+  "dependencies": {
+    "backstopjs": "^6.1.4"
+  }
+}

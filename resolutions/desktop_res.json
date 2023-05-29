@@ -1,0 +1,22 @@
+ [
+    {
+        "label": "big",
+        "width": 1080,
+        "height": 720
+    },
+    {
+        "label": "large",
+        "width": 1066,
+        "height": 814
+    },
+    {
+        "label": "xlarge",
+        "width": 1400,
+        "height": 1050
+    },
+    {
+        "label": "xxlarge",
+        "width": 1600,
+        "height": 1200
+    }
+]

@@ -1,0 +1,17 @@
+ [
+    {
+        "label": "iPad Pro",
+        "width": 1024,
+        "height": 1366
+    },
+    {
+        "label": "iPad & iPad mini",
+        "width": 768,
+        "height": 1024
+    },
+    {
+        "label": "iPad air",
+        "width": 820,
+        "height": 1180
+    }
+]

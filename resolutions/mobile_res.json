@@ -1,0 +1,32 @@
+[
+  {
+      "label": "Samsung Galaxy S8+",
+      "width": 360,
+      "height": 740
+  },
+  {
+      "label": "Samsung Galaxy S20 Ultra",
+      "width": 412,
+      "height": 915
+  },
+  {
+      "label": "iPhone SE",
+      "width": 375,
+      "height": 667
+  },
+  {
+      "label": "Samsung Galaxy Fold",
+      "width": 280,
+      "height": 653
+  },
+  {
+      "label": "iPhone 14 Pro Max",
+      "width": 430,
+      "height": 932
+  },
+  {
+      "label": "iPhone 14 Pro",
+      "width": 393,
+      "height": 852
+  }
+]
