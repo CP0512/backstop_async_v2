@@ -4,6 +4,10 @@ const backstopReferenceJson = "./references/reference_backstop.json"
 
 
 function createBackstopJSON(resolutions, resources, nameOfFile){
+    // Create a directory if not present already
+    if(!fs.existsSync('generated')){
+        fs.mkdirSync('generated')
+    }
     // Read the JSON file
     const backstopJson = `./generated/${nameOfFile}.json`;
     const jsonString = fs.readFileSync(backstopReferenceJson, 'utf-8');

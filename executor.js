@@ -1,5 +1,6 @@
 const { spawnSync } = require('child_process');
 const fs = require('fs');
+ 
 
 function executeAndStoreReport(actionFlag="all"){
     // Array of BackstopJS config file names
@@ -48,6 +49,8 @@ function executeAndStoreReport(actionFlag="all"){
         }
         if(actionFlag.toLowerCase() === "test"){
             fs.cpSync('backstop_data/bitmaps_test/', `${reportFolder}/`, {recursive:true});
+            fs.cpSync('generated/', `backstop_run_script_backup/${new Date(Date.now()).toLocaleDateString().split("/").join("_")}/`, {recursive:true});
+            fs.rmSync('generated/', {recursive:true});
         }
 
         if(actionFlag.toLowerCase() === "clean"){
