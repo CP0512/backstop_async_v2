@@ -5,7 +5,7 @@ function executeAndStoreReport(actionFlag="all"){
     // Array of BackstopJS config file names
 
     const configFiles = fs.readdirSync("./generated");
-    const reportFolder = `backstop_report/${configFile.split('.')[0]}`;
+    
     console.log(configFiles);
     // Loop through each config file
     configFiles.forEach((configFile) => {
@@ -37,6 +37,7 @@ function executeAndStoreReport(actionFlag="all"){
     }
 
         // Create a folder for the report
+        const reportFolder = `backstop_report/${configFile.split('.')[0]}`;
         if (!fs.existsSync(reportFolder)){
             fs.mkdirSync(reportFolder);
         }
@@ -47,7 +48,6 @@ function executeAndStoreReport(actionFlag="all"){
         }
         if(actionFlag.toLowerCase() === "test"){
             fs.cpSync('backstop_data/bitmaps_test/', `${reportFolder}/`, {recursive:true});
-            fs.cpSync('generated')
         }
 
         if(actionFlag.toLowerCase() === "clean"){
